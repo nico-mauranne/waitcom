@@ -1,0 +1,314 @@
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+h2 {
+	font-size: 3em;
+	text-align: center;
+	margin: 2em 0;
+	text-transform: uppercase;
+}
+h3{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	margin-bottom: 1.5em;
+}
+
+.section{
+	padding-bottom: 5em;
+}
+
+.section_content p{
+	font-size: 1.4em;
+	font-weight: bold; 
+}
+/* --------------header-----------*/
+#header{
+	width: 100%;
+	margin: 0 auto;
+}
+
+#header_bg{
+	background: url("../img/Main-accueil-logo1.jpg") no-repeat center;
+	background-size: cover;
+	max-width: 100%;
+	height: 100vh;
+}
+
+body #header #header_top{
+	position:fixed;
+	left:0;
+	width: 100%;
+	z-index: 9999;
+
+}
+
+.navbar, .navbar-default{
+	background-color: #000000;
+	border:transparent;
+
+}
+.nav>li>a{
+	padding:10px 10px;
+}
+
+
+/* ----------------company--------------- */
+
+#company{
+	background-color: #EBBB3B;
+}
+
+#company h3{
+	font-style: italic;
+	font-size: 2.8em;
+	text-align: center;
+	margin: 0 0 2em 32px;
+	border-left: 5px solid #4DC8E3;	
+}
+#company p{
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 2em;
+}
+/* ---------------------mirroir----------------  */
+
+#mirroir{
+	background-color: #25A2C2;
+}
+#mirroir .slider{
+	margin-bottom: 2em;
+
+}
+#mirroir .slider ul{
+	list-style-type: none;
+	text-align: center;
+	padding:0;
+}
+#mirroir .slider ul li{
+	display: inline-block;
+	margin:1em;
+}
+
+#mirroir .slider ul li img{
+	padding: 1em;
+	border: 2px solid #FFFFFF;
+	border-radius: 10%;
+}
+
+
+/* ------------------network*-----------------------*/
+
+#network{
+	background-color: #E6077E;
+	padding-bottom: 5em;
+}
+
+#network .network{
+	text-align: center;
+}
+
+#network .network_block{
+	width: 80%;
+	margin:auto;
+	padding: 1.5em;
+	background-color: white;
+	border-radius: 5%;
+	margin-bottom: 4em;
+}
+
+#network .network_block h3{
+	border-top: 3px solid #4DC8E3;
+}
+
+#network img{
+	max-width: 30%;
+}
+
+#network .network_container{
+	width: 80%;
+	height: 27em;
+	margin: auto;
+	margin-top: 2em;
+	border-left:4px solid #4DC8E3;
+	background-color: white;
+	border-radius:10%;
+}
+
+#network .network_content ul{
+	list-style-type: none;
+	padding:0;
+}
+#network .network_content ul li{
+	font-size: 1.3em;
+}
+#network .icon{
+	background-color: #d7d7d7;
+	border-radius: 50%;
+	border: 2px solid #4DC8E3;
+	width: 44%;
+	margin: auto;
+	padding:1.1em;
+}
+
+/* -------------------offres------------- */
+
+#offre{
+	background-color: #67D8C8;
+}
+
+#offre .thumbnail{
+	background-color: #D8FFD8;
+	padding:1.5em;
+	box-shadow: 0 10px 6px -6px #777;
+	text-align: center;
+	height:	20em;
+	border-left: 4px solid #4DC8E3;
+}
+
+#offre .thumbnail ul{
+	list-style-type: none;
+}
+
+/* ----------------- clients*-------------------*/
+
+#clients img{
+	max-width: 100%;
+}
+body #clients #trust{
+	color: white;
+}
+
+#clients{
+	background-image :url('../img/bg_black.jpg');
+	padding:5em 0 10em 0;
+}
+
+/* ---------------contact---------------------- */
+
+#contact{
+	padding-bottom: 5em;
+	background-image: url('../img/white_wall.jpg');
+}
+#contact #adresse{
+	text-align: center;
+	margin:auto;
+}
+#contact #adresse img{
+	margin-bottom: 2em;
+}
+
+body #contact #adresse p{
+	font-size: 1.6em;
+}
+
+/* ------------------footer--------------------- */
+
+#footer{
+	background-color: rgba(30,30,30,0.9);
+	color: #dddddd;
+}
+footer h4{
+	text-transform: uppercase;
+	padding:1em 0;
+	font-size: 1..3em;
+}
+
+#footer ul{
+	list-style-type: none;
+	padding-left:0;
+}
+
+#footer li a{
+	color:#dddddd;
+}
+
+#footer li a:hover{
+	text-decoration: none;
+	color:white;
+}
+
+#footer ul .btn-social{
+	padding: 0 4px 0 0;
+}
+
+.copyright{
+	text-align: center;
+}
+
+#back_to_top{
+	width:50px;
+	height:50px;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 50%;
+	position:fixed;
+	bottom:20px;
+	display: none;
+	color:#FFFFFF;
+	font-size:50px;
+	text-align: center;
+	font-weight: bold;
+	padding-top:5px;
+	cursor:pointer;
+}
+
+#back_to_top i{
+  color:white;
+  position:fixed;
+  bottom:25px;
+  right:30px;
+}
+
+
+/* -------------------media queries------------------ */
+
+
+@media only screen and (max-width: 425px) {
+	body #network .network_content .network_container{
+		height:auto;
+		padding:1%;
+	}
+	#mirroir .slider ul li img{
+		width:95%;
+	}
+	#company h2{
+		font-size: 2.7em;
+	}
+
+}
+
+@media only screen and (max-width: 768px){
+	#footer .info{
+		text-align: center;
+	}
+
+	.nav>li>a{
+		padding: 10px;
+	}
+	#company p{
+		width: 70%;
+	}	
+}
+
+@media only screen and (max-width: 992px){
+	 #network .network_content .network_container{
+		height:23em;
+		padding:1%;
+	}
+	#offre .section_content .thumbnail{
+		height:auto;
+	}
+
+}
+
+@media only screen and (max-width: 1200px){
+	#offre .thumbnail{
+		height:25em;
+	}
+	#network .network_container{
+		height:35em;
+		padding:1%;
+	}
+}
+
+
